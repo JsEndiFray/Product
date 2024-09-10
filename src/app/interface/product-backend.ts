@@ -6,8 +6,8 @@ export interface ProductBackend {
 
 export interface stockIn {
   id?: number;
-  name: string;
-  description: string;
-  price: number | null;
-  stock: number | null;
+  name?: string;
+  description?: string;
+  price?: number | null;
+  stock?: number | null;
 }

@@ -1,2 +1,4 @@
 node_modules/
 auth-guard.guard.ts/
+environments/
+public/

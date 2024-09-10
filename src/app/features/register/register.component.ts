@@ -53,10 +53,7 @@ export class RegisterComponent {
       return;
     }
     // Creamos los objetos.
-    const user: UserIn = {
-      username: this.username,
-      password: this.password
-    };
+    const user: UserIn = {};
 
     //Configuramos el api con los datos que este correctamente
     this._apiUserService.addUser(user).subscribe({

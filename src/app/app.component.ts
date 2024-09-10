@@ -1,5 +1,5 @@
-import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import {Component} from '@angular/core';
+import {RouterOutlet} from '@angular/router';
 import {NavbarComponent} from "./features/navbar/navbar.component";
 import {LoginComponent} from "./features/login/login.component";
 import {DataObserveService} from "./observable/dataobserve.service";
@@ -15,8 +15,8 @@ export class AppComponent {
 
   deactivate: boolean = true;
   constructor(private $DataObservableService: DataObserveService) {
-    this.$DataObservableService.$NavFooter.subscribe(insert=>{
-      this.deactivate =insert;
+    this.$DataObservableService.$NavFooter.subscribe(insert => {
+      this.deactivate = insert;
     })
   }
 

@@ -28,20 +28,10 @@ export class AddEditProductComponent implements OnInit {
 
 
 // Modelo para el formulario, vinculado directamente a la vista
-  product: stockIn = {
-    name: '',
-    description: '',
-    price: null,
-    stock: null,
-  };
+  product: stockIn = {};
 
   // Modelo para el formulario, vinculado directamente al error
-  errorProduct: ErrorForm = {
-    nameError: '',
-    descriptionError: '',
-    priceError: '',
-    stockError: '',
-  }
+  errorProduct: ErrorForm = {}
 
 
   constructor(
