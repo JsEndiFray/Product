@@ -1,0 +1,38 @@
+mat-toolbar {
+  background: #4e8ec2;
+  color: white;
+  min-height: 80px;
+
+  & mat-icon {
+    color: white;
+  }
+
+  & .logo {
+    width: 50px;
+    margin-top: 10px;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+
+  & a {
+    min-width: 150px;
+    min-height: 45px;
+    margin: 5px;
+    background: #6d6b6d;
+    color: #ffffff;
+    border-radius: 15px;
+    font-size: 20px;
+    font-family: "Al Bayan", serif;
+    text-align: center;
+    align-content: center;
+    cursor: pointer;
+  }
+  & a:hover {
+    background-color: #009879;
+    color: #0e0d0d;
+  }
+}
+
+.spacer {
+  flex: 1 1 auto;
+}

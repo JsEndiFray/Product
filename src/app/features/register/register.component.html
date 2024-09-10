@@ -1,0 +1,13 @@
+<div class="register">
+  <form>
+    <div class="custom-form">
+      <h1>Registro de usuario</h1>
+      <input type="text" placeholder="Usuario" name="name" [(ngModel)]="username">
+      <input type="password" placeholder="Contraseña" name="password" [(ngModel)]="password">
+      <input type="password" placeholder="Repita la contraseña" name="password" [(ngModel)]="confirmPassword">
+    </div>
+    <button type="submit" (click)="addUser()">Enviar</button>
+    <button [routerLink]="['/login']">Volver</button>
+  </form>
+</div>
+

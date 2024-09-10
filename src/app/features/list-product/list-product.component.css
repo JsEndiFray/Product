@@ -1,0 +1,84 @@
+.container {
+  margin-right: 70px;
+  margin-left: 70px;
+}
+
+.title {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title p {
+  font-family: 'Arial', sans-serif;
+  font-size: 30px;
+  color: #4e8ec2;
+}
+
+.styled-table {
+  width: 100%;
+  margin: 25px 0;
+  font-size: 18px;
+  font-family: 'Arial', sans-serif;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.table-header {
+  background-color: #009879;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.table-row {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #dddddd;
+}
+
+.table-header-cell,
+.table-cell {
+  flex: 1;
+  padding: 12px 15px;
+  text-align: center;
+}
+
+.table-row:nth-of-type(even) {
+  background-color: #f3f3f3;
+}
+
+.table-row:last-of-type {
+  border-bottom: 2px solid #009879;
+}
+
+.table-row:hover {
+  background-color: #f1f1f1;
+  cursor: pointer;
+}
+
+.edit button {
+  margin-left: 5px;
+}
+
+.bot {
+  background: #4e8ec2;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  min-height: 35px;
+  min-width: 70px;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.bot:hover {
+  background-color: #009879;
+  color: #0e0d0d;
+}
+
+h5 {
+  font-family: 'Arial', sans-serif;
+  color: #4e8ec2;
+  text-align: center;
+  margin-top: 40px;
+}

@@ -1,0 +1,11 @@
+<div class="login">
+  <form>
+    <div class="custom-form">
+      <h1>Iniciar Sesion</h1>
+      <input type="text" placeholder="Nombre de usuario" name="username" [(ngModel)]="username">
+      <input type="password" placeholder="Contraseña" name="password" [(ngModel)]="password">
+      <button type="submit" (click)="login()">Entrar</button>
+      <p>No tienes cuenta?<a href="#" [routerLink]="['/register']">Registrate aqui</a></p>
+    </div>
+  </form>
+</div>

@@ -1,0 +1,38 @@
+<div class="container">
+  <div class="title">
+    <p>Listado de Productos</p>
+    <button type="button" class="bot" [routerLink]="['/product/add-edit-product']">Agregar producto</button>
+  </div>
+  @if (listProduct.length > 0) {
+    <div class="styled-table">
+      <div class="table-header">
+        <div class="table-row">
+          <span class="table-header-cell">id</span>
+          <span class="table-header-cell">Nombre</span>
+          <span class="table-header-cell">Descripción</span>
+          <span class="table-header-cell">Precio</span>
+          <span class="table-header-cell">Stock</span>
+          <span class="table-header-cell"></span>
+        </div>
+      </div>
+      <div class="table-body">
+        @for (item of listProduct; track item) {
+          <div class="table-row table-active">
+            <span class="table-cell">{{ item.id }}</span>
+            <span class="table-cell">{{ item.name }}</span>
+            <span class="table-cell">{{ item.description }}</span>
+            <span class="table-cell">{{ item.price | number: "1.2-2" }} €</span>
+            <span class="table-cell">{{ item.stock }}</span>
+            <span class="table-cell edit">
+              <button type="button" class="bot" [routerLink]="['/product/edit-product', item.id]">Editar</button>
+              <button (click)="deleteProduct(item.id!)" type="button" class="bot">Eliminar</button>
+            </span>
+          </div>
+        }
+      </div>
+    </div>
+  }
+  @if (listProduct.length === 0) {
+    <h5>No hay productos disponibles. Agrega productos para empezar.</h5>
+  }
+</div>

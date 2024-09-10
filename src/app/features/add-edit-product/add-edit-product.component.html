@@ -1,0 +1,29 @@
+<div class="add-product">
+  <form>
+    <div class="custom-form">
+      <h1>{{ accion }} Producto</h1>
+      <input type="text" placeholder="Nombre del producto" name="name" [(ngModel)]="product.name">
+      @if (errorProduct) {
+        <p>{{ errorProduct.nameError }}</p>
+      }
+      <input type="text" placeholder="Descripcion del producto" name="description" [(ngModel)]="product.description">
+      @if (errorProduct) {
+        <p>{{ errorProduct.descriptionError }}</p>
+      }
+      <input type="number" placeholder="Precio del producto" name="price" [(ngModel)]="product.price">
+      @if (errorProduct) {
+        <p>{{ errorProduct.priceError }}</p>
+      }
+      <input type="number" placeholder="Stock del producto" name="stock" [(ngModel)]="product.stock">
+      @if (errorProduct) {
+        <p>{{ errorProduct.stockError }}</p>
+      }
+
+    </div>
+    <div class="bot">
+      <button type="button" (click)="addProduct()">Aceptar</button>
+      <button [routerLink]="['/product']">Volver</button>
+    </div>
+
+  </form>
+</div>
